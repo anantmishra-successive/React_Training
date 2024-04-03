@@ -21,7 +21,7 @@ import Storage from './Que18/Storage'
 import CountDownTimer from './Que19/CountDownTimer'
 import TaskList from './Que14/TaskList'
 import LanguageSwitcher from './Que10/LanguageSwitcher'
-
+import CopyButton from './Que17/CopyButton'
 
 
 
@@ -60,6 +60,7 @@ function Assignment2() {
 <TaskList/>
 <StudentList /> 
 <EmployeeSalary/>
+<CopyButton />
 <Storage />
 <CountDownTimer />
     </div>
