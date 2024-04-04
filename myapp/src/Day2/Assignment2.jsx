@@ -33,13 +33,13 @@ const imageUrls =
 function Assignment2() {
   return (
     <div>
-      <Counter/>
+      {/* <Counter/>
       <PersonForm />
       <Todos/>
       <RandomNumberGenerator/>
-      <StepCounter/>
+      <StepCounter/> */}
       <Clock/>
-      <Notification/>
+      {/* <Notification/>
       <Slideshow images={imageUrls} />
 
       <ThemeProvider>
@@ -62,7 +62,7 @@ function Assignment2() {
 <EmployeeSalary/>
 <CopyButton />
 <Storage />
-<CountDownTimer />
+<CountDownTimer /> */}
     </div>
   )
 }

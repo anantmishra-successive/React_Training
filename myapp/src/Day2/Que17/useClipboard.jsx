@@ -4,9 +4,6 @@
 // Return a success status and methods to trigger the copying action.
 // Develop a component that uses the useClipboard hook to provide a copy button for text.
 
-
-
-
 import { useState } from 'react';
 
 function useClipboard() {
