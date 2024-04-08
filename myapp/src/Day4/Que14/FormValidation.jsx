@@ -46,7 +46,7 @@ export const FormValidation = () => (
           {errors.lastName && touched.lastName ? (
             <div>{errors.lastName}</div>
           ) : null}
-          <Label>Enter email</Label>
+          <label>Enter email</label>
           <Field name="email" type="email" />
           {errors.email && touched.email ? <div>{errors.email}</div> : null}
           <button type="submit">Submit</button>
