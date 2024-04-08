@@ -15,6 +15,7 @@ import LoginForm from './Que10/LoginForm'
 import FormDialog from './Que11/FormDialog'
 import DataTable from './Que12/DataTable'
 import Login from './Que13/Login'
+import  {FormValidation } from './Que14/FormValidation'
 const Assignment4 = () => {
   return (
     <div>
@@ -31,6 +32,7 @@ const Assignment4 = () => {
       <FormDialog/>
       <DataTable/>
       <Login/>
+      <FormValidation/>
     </div>
   )
 }
