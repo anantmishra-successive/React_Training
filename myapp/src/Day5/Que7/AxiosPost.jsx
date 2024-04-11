@@ -10,8 +10,8 @@ const AxiosPost = () => {
 
 
    const handleSubmit = () =>{
-    setData({userId,title,body})
-    axios.post('https://jsonplaceholder.typicode.com/posts', data)
+   
+    axios.post('https://jsonplaceholder.typicode.com/posts', {userId,title,body} )
   .then(function (response) {
     console.log("POST request successfull!");
     console.log(response.data);

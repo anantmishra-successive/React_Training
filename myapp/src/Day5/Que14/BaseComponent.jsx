@@ -4,7 +4,7 @@ import WithAuth from './WithAuth'
 const BaseComponent = () => {
   return (
     <div>
-      ccccccc
+     <h2>Protected Componennt Rendered</h2>
     </div>
   )
 }

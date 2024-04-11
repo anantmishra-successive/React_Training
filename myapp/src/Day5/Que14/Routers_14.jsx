@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import ProtectedComponent from './ProtectedComponent';
 import Login from './Login';
 import BaseComponent from './BaseComponent';
+import WithAuth from './WithAuth';
 
 const Routers_14 = () => {
   return (

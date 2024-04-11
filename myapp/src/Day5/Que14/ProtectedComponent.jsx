@@ -1,21 +1,21 @@
 // ProtectedComponent.js
 
 import React from 'react';
-import WithAuth from './WithAuth'; // Import the HOC
+import WithAuth from './WithAuth'; 
 import { Navigate, Outlet , Redirect} from 'react-router-dom';
 
-const ProtectedComponent = () => {
+const ProtectedComponent = (props) => {
 
-const auth = localStorage.getItem("login")
+
 
   return (
     <div>
      {
-        auth==="true" ? <Outlet/> : <Navigate to="/login" />
+        props.isAuthenticated==="true" ? <Outlet/> : <Navigate to="/login" />
      }
     </div>
   );
 };
 
-// Wrap the component with the withAuth HOC
+
 export default WithAuth(ProtectedComponent);

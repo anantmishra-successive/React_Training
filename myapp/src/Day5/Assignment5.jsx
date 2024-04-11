@@ -10,23 +10,23 @@ import Application1 from './Que12/Application1'
 import HomeModal from './Que13/HomeModal'
 import Component15 from './Que15/Component'
 import Component16 from './Que16/Component'
-import Routers_14 from './Que14/Routers_14'
+import Routers14 from './Que14/Routers_14'
 
 const Assignment5 = () => {
   return (
     <div>
-      {/* <FetchData/> 
+      <FetchData/> 
        <Error/>
       <Loader />
       <Pagination />
-      <AxiosData /> */}
-      {/* <ErrorAxios /> */}
-      {/* <AxiosPost />
+      <AxiosData />
+      <ErrorAxios />
+      <AxiosPost />
       <Application1/>
       <HomeModal />
       <Component15/>
-      <Component16/> */}
-       <Routers_14/>
+      <Component16/>
+       <Routers14/>
     </div>
   )
 }
