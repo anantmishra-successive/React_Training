@@ -8,7 +8,7 @@ export default function Products() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    // Fetch products (you can replace this with your own data source)
+    
     fetch('https://dummyjson.com/products')
       .then((response) => response.json())
       .then((data) => setProducts(data.products))
