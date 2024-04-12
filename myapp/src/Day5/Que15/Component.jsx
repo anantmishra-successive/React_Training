@@ -1,10 +1,11 @@
 import React from 'react'
 import WithLogger from './WithLogger'
 
-const Component = () => {
+const Component = (props) => {
   return (
     <div>
-      This is a component
+     {props.count}
+     <button onClick={()=>{props.setCount(props.count + 1)}}>Click</button>
     </div>
   )
 }
