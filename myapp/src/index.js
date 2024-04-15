@@ -4,14 +4,23 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
+import { ErrorBoundary } from "react-error-boundary";
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
  <>
- <BrowserRouter>
 
- <App />
- </BrowserRouter>
-  
+<ErrorBoundary>
+
+<BrowserRouter>
+
+<App />
+</BrowserRouter>
+ 
+</ErrorBoundary>
+
+
  
  
  </>
