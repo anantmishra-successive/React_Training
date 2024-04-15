@@ -1,58 +1,38 @@
-// 12.Create a simple voting application using the useReducer hook.
+// Create a simple voting application using the useReducer hook.
 // Set up a reducer to manage the votes for different options.
 // Create buttons representing voting options.
 // Use the useReducer hook to access the votes state and dispatch actions.
 // Allow users to vote for their preferred options.
 // Display the current vote count for each option.
 
+import React, { useReducer } from "react";
 
-import React, { useState, useReducer } from "react";
+const initialState = { bjpCount: 0, congressCount: 0 };
+const PARTY_BJP="BJP";
+const PARTY_CONGRESS="CONGRESS";
 
-const voteReducer = (state, action) => {
-    //console.log(state[1]);
-  switch (action.type) {
-    
-    case "increment":
-        const newState =state.map((ele)=>{
-            if(ele.name === action.name){
-                ele.votes = ele.votes + 1;
-            }
-            return ele;
-        })
-        return newState; 
-        
-      
-    
+const reducer = (state, action) => {
+  switch (action) {
+    case PARTY_BJP:
+      return { ...state, bjpCount: state.bjpCount + 1 };
+    case PARTY_CONGRESS:
+      return { ...state, congressCount: state.congressCount + 1 };
     default:
       return state;
   }
 };
-const initialState =[
-    {
-        name:"BJP",
-        votes:0,
-    },
-    {
-        name:"Congress",
-        votes:0,
-    }
-];
 
-const Voting = () => {
-    const [votes, dispatch] = useReducer(voteReducer, initialState);
-    return (
-        <div className="voting">
-            <h2>Voting</h2>
-            <button onClick={() => dispatch({ type: "increment",name:"BJP" })}>
-                BJP
-            </button>
-            <button onClick={() => dispatch({ type: "increment", name:"Congress" })}>
-                Congress
-            </button>
-            <h3>BJP: {votes[0].votes}</h3>
-            <h3>Congress: {votes[1].votes}</h3>
-        </div>
-    );
+function VoteReducer() {
+  const [vote, dispatch] = useReducer(reducer, initialState);
+
+  return (
+    <>
+          <p>BJP Votes: {vote.bjpCount}</p>
+      <p>Congress Votes: {vote.congressCount}</p>
+      <button onClick={() => dispatch(PARTY_BJP)}>Vote for BJP</button>
+      <button onClick={() => dispatch(PARTY_CONGRESS)}>Vote for CONGRESS</button>
+    </>
+  );
 }
 
-export default Voting;
+export default VoteReducer;
