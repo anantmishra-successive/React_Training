@@ -6,7 +6,11 @@ function App() {
   return (
     <div className="App">
       {/* <Assignment1/> */}
+<<<<<<< HEAD
       <Assignment2/>
+=======
+       <Assignment2/> 
+>>>>>>> 1d319c48f068a8675ef87fadbd0068fc27cb4adb
      
     </div>
   );
