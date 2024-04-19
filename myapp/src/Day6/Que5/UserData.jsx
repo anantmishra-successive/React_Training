@@ -1,4 +1,4 @@
-const userdata=[
+const Userdata=[
     {
         name:'Udit',
         email:'xyz@gmail.com',
@@ -16,4 +16,4 @@ const userdata=[
     }
 ]
 
-export default userdata;
+export default Userdata;

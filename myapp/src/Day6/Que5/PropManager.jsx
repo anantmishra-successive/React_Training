@@ -1,10 +1,10 @@
 import React from 'react';
     import Userprofile from './Userprofile';
-    import data from './Userdata';
+    import Userdata from './UserData';
 
     const PropManager = () => {
         return (
-            <Userprofile dataprop={data} />
+            <Userprofile dataprop={Userdata} />
         );
     }
     export default PropManager;
