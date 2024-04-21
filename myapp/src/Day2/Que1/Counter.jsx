@@ -13,7 +13,11 @@ function Counter() {
     const [count, setCount] = useState(0)
     return (
         <div>
+<<<<<<< HEAD
             <h3><p>{count}</p></h3>
+=======
+            <p>{count}</p>
+>>>>>>> 74b963610f4fd2543feaa8804222a7157cc95685
             <button onClick={() => setCount(count + 1)}>Increment</button>
             <button onClick={() => setCount(count - 1)}>Decrement</button>
             

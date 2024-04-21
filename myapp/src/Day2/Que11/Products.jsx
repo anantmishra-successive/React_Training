@@ -1,14 +1,14 @@
 // Products.jsx
 import React, { useEffect, useState } from 'react';
-import { useCart } from './CartContext';
+import { Carts } from './CartContext';
 import './product.css'
 
 export default function Products() {
-  const { addToCart } = useCart();
+  const { addToCart } = Carts();
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    // Fetch products (you can replace this with your own data source)
+    
     fetch('https://dummyjson.com/products')
       .then((response) => response.json())
       .then((data) => setProducts(data.products))

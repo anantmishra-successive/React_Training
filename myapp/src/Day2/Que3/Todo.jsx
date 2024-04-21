@@ -4,7 +4,7 @@ Render a list of todos using the map function.
 Each todo should have a checkbox to mark it as completed and a delete button to remove it from the list.
 Use the useState hook to manage the state of each todo item (completed or not).*/
 
-import React, { useState} from "react";
+import React, { useState } from "react";
 
 const tasks = [
   { id: 1, name: "Training" },
@@ -15,14 +15,16 @@ const tasks = [
 
 function Todo() {
   const [todos, setTodos] = useState(tasks);
-  const [task,setTask] =useState("")
-  
-  
-  const handleChange=()=>{
-    
-    setTodos([...todos,{id:Date.now().getTime().toString(), name:task}])
-    setTask("")
-  }
+  const [task, setTask] = useState("");
+
+  const handleChange = () => {
+    if (task.length === 0) {
+      return window.alert("please enter task");
+    }
+
+    setTodos([...todos, { id: Date.now().toString(), name: task }]);
+    setTask("");
+  };
 
   const Delete = (id) => {
     const updatedTodo = todos.filter((ele) => {
@@ -32,10 +34,15 @@ function Todo() {
   };
   return (
     <div>
-        <label>Enter Task:</label>
-        <input type="text" placeholder="Task" onChange={(e) => setTask(e.target.value)} value={task}/>
-        <button onClick={handleChange}>Add Task</button>
-        
+      <label>Enter Task:</label>
+      <input
+        type="text"
+        placeholder="Task"
+        onChange={(e) => setTask(e.target.value)}
+        value={task}
+      />
+      <button onClick={handleChange}>Add Task</button>
+
       {todos.map((todo) => (
         <h3 key={todo.id}>
           {todo.name} <button onClick={() => Delete(todo.id)}> Delete</button>{" "}

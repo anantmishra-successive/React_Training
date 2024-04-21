@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Cart.jsx
 import React from 'react';
 import { useCart } from './CartContext';
@@ -6,6 +7,16 @@ export default function Cart() {
   const { cart } = useCart();
 
   // Calculate the total price
+=======
+
+import React from 'react';
+import { Carts } from './CartContext';
+
+export default function Cart() {
+  const { cart } = Carts();
+
+  
+>>>>>>> 74b963610f4fd2543feaa8804222a7157cc95685
   const totalPrice = cart.reduce((total, item) => total + item.price, 0);
 
   return (
