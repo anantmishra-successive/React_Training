@@ -1,0 +1,14 @@
+.products{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* margin: 2rem; */
+    padding: 1rem;
+    
+}
+.product img{
+    height: 300px;
+    width: 300px;
+}
