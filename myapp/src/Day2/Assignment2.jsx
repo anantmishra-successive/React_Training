@@ -30,6 +30,7 @@ const imageUrls =
 "https://avatar.iran.liara.run/public/job/police/female",
 "https://avatar.iran.liara.run/public/job/lawyer/male"]
 
+<<<<<<< HEAD
 function Assignment2() {
   return (
     <div>
@@ -40,6 +41,24 @@ function Assignment2() {
       <StepCounter/> */}
       <Clock/>
       {/* <Notification/>
+=======
+
+const tasks = [
+  { name: "Eat", isCompleted: false },
+  { name: "Sleep", isCompleted: false },
+  { name: "Repeat", isCompleted: false },
+];
+function Assignment2() {
+  return (
+    <div>
+      <Counter/>
+      <PersonForm />
+      <Todos/>
+      <RandomNumberGenerator/>
+      <StepCounter/>
+      <Clock/>
+      <Notification/>
+>>>>>>> cd008919a01c623d8ac1c1aa913ff39bf452d124
       <Slideshow images={imageUrls} />
 
       <ThemeProvider>
@@ -57,12 +76,12 @@ function Assignment2() {
 
 < VoteReducer/>
 <Parent />
-<TaskList/>
+<TaskList tasks={tasks}/>
 <StudentList /> 
 <EmployeeSalary/>
 <CopyButton />
 <Storage />
-<CountDownTimer /> */}
+<CountDownTimer />
     </div>
   )
 }

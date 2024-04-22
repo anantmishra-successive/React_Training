@@ -30,6 +30,7 @@ function useTimer(initialTime) {
   };
   const Reset = () => {
     setTime(initialTime);
+    setIsActive(false);
   };
 
   return { time, setTime, Start, Pause, isActive, Reset };
