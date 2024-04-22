@@ -15,9 +15,14 @@ function App() {
        {/* <Assignment4/> */}
        {/* <Assignment5/> */}
        < Assignment6 />
+       {/* <Assignment4/> */}
+       {/* <Assignment3 /> */}
+       {/* <Assignment2/>  */}
      
     </div>
   );
 }
+
+
 
 export default App;

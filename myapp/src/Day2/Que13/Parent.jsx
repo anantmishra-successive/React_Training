@@ -15,7 +15,7 @@ const Parent = () => {
     const [count,setCount]=useState(0)
     const incrementCount=useCallback(() =>{
         setCount(count+1)
-    });
+    },[count]);
 
   return (
     <div>

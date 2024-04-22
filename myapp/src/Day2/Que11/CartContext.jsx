@@ -23,6 +23,6 @@ export function CartProvider({ children }) {
   );
 }
 
-export function useCart() {
+export function Carts() {
   return useContext(CartContext);
 }
