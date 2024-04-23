@@ -11,6 +11,7 @@ const Contact = lazy(() => import("./Contact"));
 function RouteComponent() {
   return (
     <div>
+      <BrowserRouter>
       <Suspense fallback={<h1>Loading..</h1>}>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -19,6 +20,9 @@ function RouteComponent() {
           <Route path="/Contact" element={<Contact />} />
         </Routes>
       </Suspense>
+      
+      </BrowserRouter>
+     
       
     </div>
   );
